@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import logo from "../assets/Logo.png"
+import notification from "../assets/notifications.png"
 
 const Navbar = () => {
   return (
@@ -14,6 +15,12 @@ const Navbar = () => {
                 <li><Link to="/trade" className="bg-white px-3 py-1 ml-2 rounded-full text-[#CB0881] font-medium hover:shadow-nav-shadow">Trade</Link></li>
                 <li><Link to="/affilate" className="bg-white px-3 py-1 ml-2 rounded-full text-[#CB0881] font-medium hover:shadow-nav-shadow">Affiliate</Link></li>
                 <li><Link to="/wallet" className="bg-white px-3 py-1 ml-2 rounded-full text-[#CB0881] font-medium hover:shadow-nav-shadow">Wallet</Link></li>
+                <li><Link>
+                <div className="indicator">
+                    <span className="indicator-item badge badge-secondary"></span> 
+                    <div className="grid  bg-base-300 place-items-center"><img src={notification} alt="notification-icon"/></div>
+                </div>
+                </Link></li>
             </div>
         </div>
     </div>
