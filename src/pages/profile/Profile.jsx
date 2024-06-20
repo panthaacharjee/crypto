@@ -15,10 +15,10 @@ import about from "../../assets/icon/About.png"
 import help from "../../assets/icon/help.png"
 import logout from "../../assets/icon/logout.png"
 import { Link, useNavigate } from "react-router-dom";
-import AccountPassword from "../../components/AccountPassword";
-import PhoneNumber from "../../components/PhoneNumber";
-import VerifyAccount from "../../components/VerifyAccount";
-import UpdateProfile from "../../components/UpdateProfile";
+// import AccountPassword from "../../components/AccountPassword";
+// import PhoneNumber from "../../components/PhoneNumber";
+// import VerifyAccount from "../../components/VerifyAccount";
+// import UpdateProfile from "../../components/UpdateProfile";
 
 
 
@@ -37,14 +37,15 @@ const Profile = () => {
     // I prefer to not show the whole text area selected.
     e.target.focus();
     setCopySuccess('Copied!');
-  };
+  }
+  
   return (
     <>
         <div className="container mx-auto pt-28 pb-12 flex">
             <div className="w-8/12 border-r-2 border-[#CB087D]">
                 <div className="flex items-center justify-around">
                     <div className="flex items-center">
-                        <div className="w-36 h-36 rounded-full overflow-hidden shadow-nav-shadow shadow-[#CB087D]">
+                        <div className="w-36 h-36 rounded-full overflow-hidden border-2 border-[#CB087D]">
                             <img src={profile3} alt="Profile Image"/>
                         </div>
                         <div className="ml-10">
@@ -71,7 +72,7 @@ const Profile = () => {
                     </div>
                     <div className="flex items-center mt-5">
                         <p className="bg-[#FCEEF8] py-2 w-52 text-center rounded-md">OTS Balance</p>
-                        <button className="bg-[#CB087D] py-2 px-6 ml-5 rounded-md text-white">Exchange</button>
+                        <button onClick={()=>navigate("/exchange")} className="bg-[#CB087D] py-2 px-6 ml-5 rounded-md text-white">Exchange</button>
                     </div>
                 </div>
             </div>

@@ -14,7 +14,7 @@ const AddFund = () => {
                 <img src={deposit}/>
            </div>
            <div className="flex items-center">
-                <div className="w-24 h-24 rounded-full overflow-hidden shadow-nav-shadow shadow-[#CB087D]">
+                <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-[#CB087D]">
                     <img src={profile3} alt="Profile Image"/>
                 </div>
                 <div className="ml-10">
