@@ -25,6 +25,8 @@ import UpdateProfile from "../../components/UpdateProfile";
 const Profile = () => {
     const navigate = useNavigate()
 
+    const random = Math.floor(Math.random()* 100000-1+1 + 1)
+
   const [copySuccess, setCopySuccess] = useState('');
   const textAreaRef = useRef(null);
     console.log(copySuccess)
@@ -78,10 +80,10 @@ const Profile = () => {
                     <p className="font-semibold text-md mb-1">Refer Link</p>
                     <div>
                         {/* <QrReader/> */}
-                        <QRCodeSVG value="http://oriontrading.com/r/280764"/>
+                        <QRCodeSVG value={`http://oriontrading.com/r/${random}`}/>
                     </div>
                     <div className="flex items-center mt-3">
-                        <p className="text-[#929292]">http://oriontrading.com/r/280764</p>
+                        <p className="text-[#929292]">{`http://oriontrading.com/r/${random}`}</p>
                         <img className="h-4 w-4 cursor-pointer ml-3" src={copy2} />
                     </div>
                 </div>
