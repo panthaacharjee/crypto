@@ -10,6 +10,7 @@ export default {
       },
       boxShadow: {
         'nav-shadow': '0 0px 5px 3px #CB0881',
+        'box-shadow':'0px 0px 1px 2px #ffdbf1'
       }
     },
   },
