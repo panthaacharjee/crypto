@@ -1,5 +1,5 @@
 // import profile from "../../assets/profile.png"
-import { useRef, useState } from "react"
+import {  useState } from "react"
 import {QRCodeSVG} from 'qrcode.react';
 
 import dashboard from "../../assets/dashboard.png"
@@ -15,6 +15,7 @@ import about from "../../assets/icon/About.png"
 import help from "../../assets/icon/help.png"
 import logout from "../../assets/icon/logout.png"
 import { Link, useNavigate } from "react-router-dom";
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 // import AccountPassword from "../../components/AccountPassword";
 // import PhoneNumber from "../../components/PhoneNumber";
 // import VerifyAccount from "../../components/VerifyAccount";
@@ -27,17 +28,9 @@ const Profile = () => {
 
     const random = Math.floor(Math.random()* 100000-1+1 + 1)
 
-  const [copySuccess, setCopySuccess] = useState('');
-  const textAreaRef = useRef(null);
-    console.log(copySuccess)
-  function copyToClipboard(e) {
-    textAreaRef.current.select();
-    document.execCommand('copy');
-    // This is just personal preference.
-    // I prefer to not show the whole text area selected.
-    e.target.focus();
-    setCopySuccess('Copied!');
-  }
+  const uid = "8779797797"
+  const referLink = `http://oriontrading.com/r/${random}`
+
   
   return (
     <>
@@ -51,8 +44,8 @@ const Profile = () => {
                         <div className="ml-10">
                             <p className="font-bold text-[#CB087D] text-xl">Md Biplab Miah</p>
                             <div className="flex justify-between items-center text-[#CB087D] font-medium">
-                                <p className=""><span>UID:</span> <span ref={textAreaRef}>2901945</span></p>
-                                <p className="cursor-pointer" onClick={copyToClipboard}><img src={copy}/></p>
+                                <p className=""><span>UID:</span> <span >{uid}</span></p>
+                                <CopyToClipboard text={uid} className="cursor-pointer ml-3" ><img src={copy}/></CopyToClipboard>
                             </div>
                             <div className="flex justify-center items-center mt-4 py-1 bg-[#FCEEF8] rounded-full text-[#CB0881]"><img src={verified} className="h-5"/><p className="ml-2">Verified</p></div>
                         </div>
@@ -81,11 +74,11 @@ const Profile = () => {
                     <p className="font-semibold text-md mb-1">Refer Link</p>
                     <div>
                         {/* <QrReader/> */}
-                        <QRCodeSVG value={`http://oriontrading.com/r/${random}`}/>
+                        <QRCodeSVG value={referLink}/>
                     </div>
                     <div className="flex items-center mt-3">
                         <p className="text-[#929292]">{`http://oriontrading.com/r/${random}`}</p>
-                        <img className="h-4 w-4 cursor-pointer ml-3" src={copy2} />
+                        <CopyToClipboard text={referLink}><img className="h-4 w-4 cursor-pointer ml-3" src={copy2} /></CopyToClipboard>
                     </div>
                 </div>
                 <div className="flex flex-col items-center mt-10">

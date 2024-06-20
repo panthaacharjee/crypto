@@ -2,11 +2,15 @@ import back from "../../assets/icon/back.png"
 import profile3 from "../../assets/pro.jpg"
 import { Link, useNavigate } from "react-router-dom"
 import {QRCodeSVG} from 'qrcode.react';
+import CopyToClipboard from "react-copy-to-clipboard";
+import { useState } from "react";
 
 
 
 const Deposit = () => {
     const navigate = useNavigate()
+    const [copied, setCopied] = useState(false)
+    const depositLink = `hkhusfhfi./orangetour.com/review/explore`
   return (
     <div className="container mx-auto pt-28 pb-12">
         <div className="flex justify-between items-start">
@@ -28,8 +32,8 @@ const Deposit = () => {
             </div>
         </div>
         <div className="flex ml-12 mt-5">
-            <p className="border-[1px] border-[#CB087D] rounded-md px-5 py-2">hkhusfhfi./orangetour.com/review/explore</p>
-            <button className="bg-[#CB087D] px-5 py-1 rounded-md ml-5 text-white">Copy</button>
+            <p className="border-[1px] border-[#CB087D] rounded-md px-5 py-2">{depositLink}</p>
+            <CopyToClipboard text={depositLink}><button onClick={()=>setCopied(true)} className="bg-[#CB087D] px-5 py-1 rounded-md ml-5 text-white   ">{copied ? "Copied" : "Copy"}</button></CopyToClipboard>
         </div>
         <div className="ml-12 mt-10">
             <Link to="/deposit" className="bg-[#CB0881] px-8 py-3 rounded-full text-xs text-white">Deposit Now</Link>

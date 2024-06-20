@@ -17,7 +17,7 @@ const Exchange = () => {
   const [secondCurrency, setSecondCurrency] = useState("USDT")
 
   const exchange = ()=>{
-
+    
   }
   return (
     <div className="container mx-auto pt-28 pb-12">
