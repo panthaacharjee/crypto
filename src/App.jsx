@@ -12,6 +12,7 @@ import Login from "./Shared/Login"
 import SignIn from "./Shared/SignIn"
 import ForgotPass from "./Shared/ForgotPass"
 import SignUp from "./Shared/SignUp"
+import TradeHistory from "./pages/trade/TradeHistory"
 
 
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/exchange" element={<Exchange/>}/>
         <Route path="/trade" element={<Trade/>}/>
         <Route path="/trade/transfer" element={<Transfer/>}/>
+        <Route path="/trade/history" element={<TradeHistory/>}/>
       </Routes>
     </div>
   )
