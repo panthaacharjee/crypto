@@ -7,6 +7,8 @@ export default {
     extend: {
       colors: {
         'background-opacity': 'rgba(0, 0, 0, 0.411)',
+        'primary':'#CB0881',
+        'bg2':'#F1F1F1'
       },
       boxShadow: {
         'nav-shadow': '0 0px 5px 3px #CB0881',
