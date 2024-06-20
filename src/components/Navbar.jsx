@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
 import logo from "../assets/Logo.png"
-import notification from "../assets/notifications.png"
+import notification from "../assets/icon/notifications.png"
 
 const Navbar = () => {
   return (
-    <div className="bg-[#ffdff3] shadow-md shadow-[#d8d8d8] w-full fixed py-3">
+    <div className="bg-[#FCEEF8] shadow-md shadow-[#d8d8d8] w-full fixed py-3">
         <div className="container mx-auto flex items-center justify-between">
             <div>
                 <img src={logo} alt="Logo Image"/>
