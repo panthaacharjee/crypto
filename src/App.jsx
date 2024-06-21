@@ -13,8 +13,13 @@ import SignIn from "./Shared/SignIn"
 import ForgotPass from "./Shared/ForgotPass"
 import SignUp from "./Shared/SignUp"
 import Affilate from "./pages/Affilete/Affilate"
-
-
+import TradeHistory from "./pages/trade/TradeHistory"
+import Wallet from "./pages/wallet/Wallet"
+import WalletTransfer from "./pages/wallet/WalletTransfer"
+import SpotHistory from "./pages/wallet/SpotHistory"
+import Funding from "./pages/wallet/Funding"
+import FundWithdraw from "./pages/wallet/FundWithdraw"
+import FundTransfer from "./pages/wallet/FundTransfer"
 
 function App() {
   return (
@@ -33,6 +38,13 @@ function App() {
         <Route path="/trade" element={<Trade/>}/>
         <Route path="/affilate" element={<Affilate></Affilate>}/>
         <Route path="/trade/transfer" element={<Transfer/>}/>
+        <Route path="/trade/history" element={<TradeHistory/>}/>
+        <Route path="/wallet" element={<Wallet/>}/>
+        <Route path="/wallet/transfer" element={<WalletTransfer/>}/>
+        <Route path="/wallet/spot/history" element={<SpotHistory/>}/>
+        <Route path="/wallet/funding" element={<Funding/>}/>
+        <Route path="/wallet/withdraw" element={<FundWithdraw></FundWithdraw>}/>
+        <Route path="/wallet/fund-transfer" element={<FundTransfer></FundTransfer>}/>
       </Routes>
     </div>
   )

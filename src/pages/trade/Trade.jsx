@@ -22,7 +22,7 @@ const Trade = () => {
                 <div className="w-7/12">
                     <div className="w-full">
                         <button onClick={()=>navigate("/trade/transfer")} className="py-2 w-5/12 bg-[#CB0881] rounded-lg text-white font-medium">Transfer</button>
-                        <button className="py-2 w-5/12 ml-8 bg-[#CB0881] rounded-lg text-white font-medium">History</button>
+                        <button onClick={()=>navigate("/trade/history")} className="py-2 w-5/12 ml-8 bg-[#CB0881] rounded-lg text-white font-medium">History</button>
                     </div>
                     <div className="bg-[#FCEEF8] min-h-44 flex justify-center items-center rounded-lg mt-20">
                         <div>
