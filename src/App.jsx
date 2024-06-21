@@ -12,6 +12,7 @@ import Login from "./Shared/Login"
 import SignIn from "./Shared/SignIn"
 import ForgotPass from "./Shared/ForgotPass"
 import SignUp from "./Shared/SignUp"
+import Affilate from "./pages/Affilete/Affilate"
 
 
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/deposit" element={<Deposit/>}/>
         <Route path="/exchange" element={<Exchange/>}/>
         <Route path="/trade" element={<Trade/>}/>
+        <Route path="/affilate" element={<Affilate></Affilate>}/>
         <Route path="/trade/transfer" element={<Transfer/>}/>
       </Routes>
     </div>
