@@ -21,7 +21,7 @@ const FundTransfer = () => {
                     <button className='bg-primary p-4 w-1/5 my-4 rounded-xl '>Transfer</button>
                 </div>
                 <div>
-                    <h1 className='text-end'>Available :500.00 USD</h1>
+                    <h1 className='text-end text-primary text-pretty font-semibold'>Available :500.00 USD</h1>
                 </div>
             </div>
             <RoadMap></RoadMap>

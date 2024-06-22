@@ -20,6 +20,8 @@ import SpotHistory from "./pages/wallet/SpotHistory"
 import Funding from "./pages/wallet/Funding"
 import FundWithdraw from "./pages/wallet/FundWithdraw"
 import FundTransfer from "./pages/wallet/FundTransfer"
+import FundingHistory from "./pages/wallet/FundingHistory"
+import Ots from "./pages/wallet/Ots"
 
 function App() {
   return (
@@ -45,6 +47,8 @@ function App() {
         <Route path="/wallet/funding" element={<Funding/>}/>
         <Route path="/wallet/withdraw" element={<FundWithdraw></FundWithdraw>}/>
         <Route path="/wallet/fund-transfer" element={<FundTransfer></FundTransfer>}/>
+        <Route path="/wallet/funding-history" element={<FundingHistory></FundingHistory>}/>
+        <Route path="/wallet/ots" element={<Ots></Ots>}/>
       </Routes>
     </div>
   )

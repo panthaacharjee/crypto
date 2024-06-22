@@ -13,7 +13,7 @@ const Funding = () => {
                 <button className='bg-primary p-4 rounded-xl text-white font-semibold'>add</button>
                 <button onClick={()=>navigate('/wallet/withdraw')} className='bg-primary p-4 rounded-xl text-white font-semibold'>withdraw</button>
                 <button className='bg-primary p-4 rounded-xl text-white font-semibold'>transfer</button>
-                <button className='bg-primary p-4 rounded-xl text-white font-semibold'>history</button>
+                <button onClick={()=>navigate('/wallet/funding-history')} className='bg-primary p-4 rounded-xl text-white font-semibold'>history</button>
             </div>
             <RoadMap></RoadMap>
         </div>
