@@ -62,7 +62,7 @@ const FundingHistory = () => {
            </div>
            
         </div>
-        <div className="ml-9 mt-10">
+        <div className="ml-9 flex  mt-10">
             <button className=" px-5 py-2 mr-8   bg-[#FCEEF8] border-b-[1px] border-[#CB0881] rounded-t-md">All</button>
             <button className=" px-5 py-2 mr-8 bg-[#f1f1f2]  focus:bg-[#FCEEF8] border-b-[1px] focus:border-[#CB0881] rounded-t-md">In</button>
             <button className=" px-5 py-2 mr-8 bg-[#f1f1f2]  focus:bg-[#FCEEF8] border-b-[1px] focus:border-[#CB0881] rounded-t-md">Out</button>

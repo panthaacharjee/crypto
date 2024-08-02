@@ -22,6 +22,8 @@ import FundWithdraw from "./pages/wallet/FundWithdraw"
 import FundTransfer from "./pages/wallet/FundTransfer"
 import FundingHistory from "./pages/wallet/FundingHistory"
 import Ots from "./pages/wallet/Ots"
+import Rewards from "./pages/wallet/Rewards"
+import AffileteTeam from "./pages/Affilete/AffileteTeam"
 
 function App() {
   return (
@@ -39,6 +41,7 @@ function App() {
         <Route path="/exchange" element={<Exchange/>}/>
         <Route path="/trade" element={<Trade/>}/>
         <Route path="/affilate" element={<Affilate></Affilate>}/>
+        <Route path="/affilete-team" element={<AffileteTeam></AffileteTeam>}/>
         <Route path="/trade/transfer" element={<Transfer/>}/>
         <Route path="/trade/history" element={<TradeHistory/>}/>
         <Route path="/wallet" element={<Wallet/>}/>
@@ -49,6 +52,7 @@ function App() {
         <Route path="/wallet/fund-transfer" element={<FundTransfer></FundTransfer>}/>
         <Route path="/wallet/funding-history" element={<FundingHistory></FundingHistory>}/>
         <Route path="/wallet/ots" element={<Ots></Ots>}/>
+        <Route path="/wallet/rewards" element={<Rewards></Rewards>}/>
       </Routes>
     </div>
   )
